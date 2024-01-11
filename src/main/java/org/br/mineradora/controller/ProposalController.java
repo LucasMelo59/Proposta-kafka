@@ -9,4 +9,6 @@ public class ProposalController {
     @Inject
     ProposalService proposalService;
 
+
+
 }
