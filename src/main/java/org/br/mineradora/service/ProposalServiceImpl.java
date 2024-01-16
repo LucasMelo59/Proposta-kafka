@@ -57,9 +57,9 @@ public class ProposalServiceImpl implements ProposalService{
             proposal.setCreated(LocalDateTime.now());
             proposal.setProposalValidityDays(proposalDetailsDTO.getProposalValidityDays());
             proposal.setCountry(proposalDetailsDTO.getCountry());
-            proposal.setCustomer(proposal.getCustomer());
+            proposal.setCustomer(proposalDetailsDTO.getCustomer());
             proposal.setPriceTonne(proposalDetailsDTO.getPriceTonne());
-            proposal.setTonnes(proposal.getTonnes());
+            proposal.setTonnes(proposalDetailsDTO.getTonnes());
 
             proposalRepository.persist(proposal);
 
